@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Recompensas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a1a1a',
+                        secondary: '#666666',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="max-w-md mx-auto bg-white min-h-screen">
+        <!-- Header -->
+        <header class="p-4 border-b">
+            <img src="assets/logo.svg" alt="Logo" class="h-8">
+        </header>
+
+        <!-- Card Preview -->
+        <div class="p-4">
+            <div class="bg-gradient-to-br from-rose-400 to-purple-500 rounded-xl p-6 text-white shadow-lg">
+                <div class="mb-4">
+                    <h2 class="text-lg font-medium">Carlos Rodriguez</h2>
+                    <p class="text-sm opacity-80">Miembro desde 2023</p>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-3xl font-bold">250 Puntos</h3>
+                    <p class="mt-1">5 sellos para tu próxima recompensa</p>
+                </div>
+            </div>
+
+            <!-- Wallet Buttons -->
+            <div class="mt-6 space-y-3">
+                <button class="w-full bg-black text-white py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <i class="fab fa-apple text-xl"></i>
+                    <span>Apple Wallet</span>
+                </button>
+                <button class="w-full bg-white border border-gray-300 py-3 px-4 rounded-lg flex items-center justify-center space-x-2">
+                    <img src="assets/google-wallet.svg" alt="Google Wallet" class="h-5">
+                    <span>Google Wallet</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="p-4">
+            <h3 class="font-medium text-lg mb-4">Cómo usar tu tarjeta</h3>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gray-100 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">1</div>
+                    <p>Agrega la tarjeta a tu wallet preferido</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gray-100 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">2</div>
+                    <p>Muestra el código QR al pagar en el restaurante</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gray-100 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">3</div>
+                    <p>Acumula puntos con cada compra</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="p-4 border-t">
+            <h3 class="font-medium text-lg mb-4">Beneficios exclusivos</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg mb-2">
+                        <i class="fas fa-gift text-2xl text-gray-700"></i>
+                    </div>
+                    <p class="text-sm">Regalo de cumpleaños</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg mb-2">
+                        <i class="fas fa-percent text-2xl text-gray-700"></i>
+                    </div>
+                    <p class="text-sm">Descuentos especiales</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg mb-2">
+                        <i class="fas fa-star text-2xl text-gray-700"></i>
+                    </div>
+                    <p class="text-sm">Productos exclusivos</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-50 p-4 rounded-lg mb-2">
+                        <i class="fas fa-clock text-2xl text-gray-700"></i>
+                    </div>
+                    <p class="text-sm">Acceso anticipado</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="p-4 border-t mt-6">
+            <div class="text-center text-sm text-gray-600">
+                <p>¿Necesitas ayuda? <a href="#" class="text-black font-medium">Contacta con nosotros</a></p>
+                <p class="mt-2">Al usar esta tarjeta aceptas nuestros <a href="#" class="underline">términos y condiciones</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
